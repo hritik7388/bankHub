@@ -1,0 +1,41 @@
+{
+  "port": 2036,
+  "hostAddress": "localhost",
+  "databaseHost": "localhost",
+  "databasePort": "3306 ",
+  "DB_DIALECT": "mysql",
+  "databaseName": "bankhubDB",
+  "databaseUser": "root", 
+  "databasePassword":"Bankhub@1",
+  "jwtsecret": "nodejwt",
+  "jwtresetsecret": "nodejwt",
+  "nodemailer": {
+    "service": "gmail",
+    "email": "mobiloitte.node@gmail.com",
+    "password": "wdbakhorlxmmqrhg"
+  },
+  "jwtOptions": {
+    "expiresIn": "365d"
+  },
+  "swaggerDefinition": {
+    "info": {
+      "title": "bank_hub-nodejs-dev",
+      "version": "2.0",
+      "description": "bank_hub-nodejs-dev- API Docs"
+    },
+    "basePath": "/api/v1",
+    "securityDefinitions": {
+      "tokenauth": {
+        "type": "apiKey",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+
+  "cloudinary": {
+    "cloud_name": "dpiw7uxv9",
+    "api_key": "748138487569278",
+    "api_secret": "fhqGlztRs7tFBWogZ6sjaQxE-1g"
+  }
+}
